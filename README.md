@@ -1,1 +1,1 @@
-# Vorhersagen-Kompatibilit-t
+# Vorhersagen-Kompatibilitat
