@@ -1,0 +1,1 @@
+# Vorhersagen-Kompatibilit-t
