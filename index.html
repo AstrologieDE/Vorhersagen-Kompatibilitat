@@ -6,11 +6,13 @@
   <title>Astrologische Beratung</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet" />
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Raleway', sans-serif;
       background: #fefcf9;
       color: #2c2c2c;
+      scroll-behavior: smooth;
     }
     header {
       display: flex;
@@ -19,6 +21,11 @@
       text-align: center;
       padding: 80px 20px 40px;
       background: #f5f1ea;
+      animation: fadeIn 1.2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     header img {
       border-radius: 50%;
@@ -26,6 +33,7 @@
       height: 140px;
       object-fit: cover;
       margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     header h1 {
       font-size: 2.2em;
@@ -39,6 +47,7 @@
     .section {
       padding: 50px 20px;
       text-align: center;
+      animation: fadeIn 1s ease-in;
     }
     .section h2 {
       font-size: 1.8em;
@@ -58,6 +67,10 @@
       border-radius: 12px;
       padding: 25px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .service:hover {
+      transform: translateY(-5px);
     }
     .service img {
       width: 60px;
@@ -83,6 +96,25 @@
     .cta a:hover {
       background: #a07128;
     }
+    .about, .testimonials {
+      background: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .about p, .testimonials p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+      font-size: 1.1em;
+      color: #444;
+    }
+    .testimonial {
+      background: #f9f6f0;
+      padding: 20px;
+      margin: 20px auto;
+      border-left: 4px solid #b0832e;
+      max-width: 600px;
+      font-style: italic;
+    }
     footer {
       background: #f5f1ea;
       text-align: center;
@@ -99,6 +131,11 @@
   <h1>Individuelle astrologische Beratung</h1>
   <p>Ich helfe dir, dein inneres Potenzial zu entdecken, wichtige Lebensentscheidungen zu verstehen und deinen Weg mit Hilfe der Sterne zu finden.</p>
 </header>
+
+<section class="about">
+  <h2>Über mich</h2>
+  <p>Ich bin Anna Sternlicht, zertifizierte Astrologin mit über 10 Jahren Erfahrung. Meine Leidenschaft ist es, Menschen durch die Weisheit der Sterne Orientierung und Klarheit zu geben. Mein Ansatz kombiniert klassische Astrologie mit moderner Lebensberatung.</p>
+</section>
 
 <section class="section">
   <h2>Meine Angebote</h2>
@@ -122,6 +159,12 @@
   <div class="cta">
     <a href="https://dein-horoskop-link.com">Jetzt individuelles Horoskop erhalten</a>
   </div>
+</section>
+
+<section class="testimonials">
+  <h2>Was meine Kunden sagen</h2>
+  <div class="testimonial">„Anna hat mir geholfen, schwierige Entscheidungen mit neuer Klarheit zu treffen. Ihre Prognosen waren unglaublich zutreffend!“ – Julia M.</div>
+  <div class="testimonial">„Dank Anna habe ich meine wahre Berufung entdeckt. Ihre Beratung war ein Wendepunkt in meinem Leben.“ – Markus T.</div>
 </section>
 
 <footer>
