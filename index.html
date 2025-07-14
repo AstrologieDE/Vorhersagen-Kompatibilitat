@@ -3,47 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Astrologischer Service</title>
+  <title>Astrologische Beratung</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet" />
   <style>
-    body { margin: 0; font-family: 'Raleway', sans-serif; background: #fff9f0; color: #2c2c2c; }
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background: #fefcf9;
+      color: #2c2c2c;
+    }
     header {
-      background: url('https://images.pexels.com/photos/6806456/pexels-photo-6806456.jpeg') center/cover no-repeat;
-      padding: 100px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      color: #fff;
+      padding: 80px 20px 40px;
+      background: #f5f1ea;
     }
-    header h1 { font-size: 3em; margin-bottom: 10px; }
-    header p { font-size: 1.2em; }
-    section {
-      padding: 60px 20px;
-      text-align: center;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .image-block img {
-      width: 100%;
-      max-width: 600px;
+    header img {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
       margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #555;
+      max-width: 600px;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 1.8em;
+      color: #b0832e;
+      margin-bottom: 15px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .service {
+      max-width: 280px;
+      background: #fff;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
-    h2 { color: #d47a00; font-size: 2em; margin: 20px 0 10px; }
-    p { font-size: 1.2em; margin-bottom: 20px; }
-    .cta-button {
-      display: inline-block;
-      background: #ff9900;
-      color: #fff;
-      padding: 14px 30px;
-      border-radius: 30px;
+    .service img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+    .service h3 {
+      margin-bottom: 10px;
       font-size: 1.2em;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background .3s;
     }
-    .cta-button:hover { background: #e68100; }
+    .cta {
+      margin-top: 40px;
+    }
+    .cta a {
+      display: inline-block;
+      background: #b0832e;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #a07128;
+    }
     footer {
-      background: #f1f1f1;
+      background: #f5f1ea;
       text-align: center;
       padding: 30px 20px;
       font-size: 0.9em;
@@ -54,37 +95,37 @@
 <body>
 
 <header>
-  <h1>Finde dein Schicksal</h1>
-  <p>Dein personalisiertes Horoskop wartet auf dich – entdecke deine Zukunft heute!</p>
+  <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" alt="Astrologin" />
+  <h1>Individuelle astrologische Beratung</h1>
+  <p>Ich helfe dir, dein inneres Potenzial zu entdecken, wichtige Lebensentscheidungen zu verstehen und deinen Weg mit Hilfe der Sterne zu finden.</p>
 </header>
 
-<section>
-  <div class="image-block">
-    <img src="https://images.pexels.com/photos/6806399/pexels-photo-6806399.jpeg" alt="Zodiak-Symbol" />
+<section class="section">
+  <h2>Meine Angebote</h2>
+  <div class="services">
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/512/3193/3193522.png" alt="Horoskop" />
+      <h3>Persönliches Horoskop</h3>
+      <p>Erhalte eine detaillierte Analyse deiner Geburtssituation, Talente und Herausforderungen.</p>
+    </div>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/512/3193/3193563.png" alt="Partnerschaft" />
+      <h3>Beziehungsanalyse</h3>
+      <p>Entdecke deine Kompatibilität mit anderen Sternzeichen und Beziehungschancen.</p>
+    </div>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/512/3193/3193594.png" alt="Tagesvorhersage" />
+      <h3>Tägliche Prognose</h3>
+      <p>Tägliche Einsichten zu Energie, Emotionen und Chancen – abgestimmt auf deinen Chart.</p>
+    </div>
   </div>
-  <h2>Was sagt dein Sternzeichen?</h2>
-  <p>Dein Sternzeichen offenbart dir verborgene Eigenschaften, Talente und Herausforderungen. Erhalte astrologische Einsichten in dein Leben.</p>
-</section>
-
-<section>
-  <div class="image-block">
-    <img src="https://images.pexels.com/photos/6806456/pexels-photo-6806456.jpeg" alt="Astrologische Karte" />
+  <div class="cta">
+    <a href="https://dein-horoskop-link.com">Jetzt individuelles Horoskop erhalten</a>
   </div>
-  <h2>Astrologische Kompatibilität</h2>
-  <p>Wer passt wirklich zu dir? Finde heraus, welche Sternzeichen perfekt mit dir harmonieren.</p>
-</section>
-
-<section>
-  <div class="image-block">
-    <img src="https://images.pexels.com/photos/6806420/pexels-photo-6806420.jpeg" alt="Kosmische Vorhersage" />
-  </div>
-  <h2>Deine tägliche Vorhersage</h2>
-  <p>Nutze die Sterne, um wichtige Entscheidungen mit Klarheit und Selbstvertrauen zu treffen.</p>
-  <a href="https://your-partner-offer-link.com" class="cta-button">Jetzt Horoskop erhalten</a>
 </section>
 
 <footer>
-  <p>© 2025 Astrologie & Horoskop Portal – Vertrauen Sie auf die Kraft der Sterne.</p>
+  <p>© 2025 Astrologin Anna Sternlicht – Vertrauen Sie den Sternen.</p>
 </footer>
 
 </body>
